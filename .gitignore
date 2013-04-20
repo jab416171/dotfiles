@@ -1,0 +1,14 @@
+*
+!.bash_aliases
+!.bash_functions
+!.bash_setup_ps1
+!.gitconfig
+!.gitignore_global
+!.gitignore
+!.profile_ssh_stuff
+!.vimrc
+!.zshrc
+!README.md
+!mcabberrc
+!ssh_config.txt
+!bin/

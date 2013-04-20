@@ -1,0 +1,31 @@
+[user]
+	name = Joseph Bass
+	email = jab416171@gmail.com
+[core]
+	excludesfile = ~/.gitignore_global
+	autocrlf = input
+	editor = vim
+[alias]
+	st = status
+	ci = commit
+	br = branch
+	co = checkout
+	df = diff
+	lg = log --graph --pretty=format:'%Cred%h%Creset | %an | %cn | -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+	psuh = push
+	unstage = reset HEAD
+	ignore = update-index --assume-unchanged
+	unignore = update-index --no-assume-unchanged
+	ignored = !git ls-files -v | grep ^[a-z]
+[merge]
+	conflictstyle = diff3
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+[push]
+	default = current
+[github]
+	user = jab416171
+[hooks]
+	mailinglist = josephbass@attask.com
