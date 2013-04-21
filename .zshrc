@@ -14,6 +14,9 @@ compinit
 if [ -r ~/.zshaliases ]; then
 		. ~/.zshaliases
 fi
+if [ -f ~/src/liquidprompt/liquidprompt ]; then
+		. ~/src/liquidprompt/liquidprompt
+fi
 
 # The function will not be run in future, but you can run
 # it yourself as follows:
