@@ -24,7 +24,9 @@ export PATH
 shopt -s histappend
 export EDITOR=vim
 # set -o vi
-if [ -f ~/.bash_setup_ps1 ]; then
+if [ -f ~/src/liquidprompt/liquidprompt ]; then
+		. ~/src/liquidprompt/liquidprompt
+else
 		. ~/.bash_setup_ps1
 fi
 
