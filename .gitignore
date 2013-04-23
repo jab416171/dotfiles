@@ -6,6 +6,7 @@
 !.gitignore_global
 !.gitignore
 !.profile_ssh_stuff
+!.liquidpromptrc
 !.vimrc
 !.zshrc
 !README.md
