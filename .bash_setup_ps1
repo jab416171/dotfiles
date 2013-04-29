@@ -108,7 +108,7 @@ Jobs="\j"
 # Detect whether the current directory is a git repository.
 # Detect whether the current directory is a git repository.
 function is_git_repository {
-[ $(git ls-files . | wc -l) -gt 0 ] && git branch > /dev/null 2>&1
+[ $(git ls-files . 2>/dev/null | wc -l) -gt 0 ] && git branch > /dev/null 2>&1
 }
 
 # Detect whether the current directory is a subversion repository.
