@@ -239,7 +239,7 @@
 " set background=dark			" Use a dark background
 filetype plugin indent on		" Automatically detect file types
 syntax on						" Syntax highlighting
-set mouse=a						" Automatically enable mouse usage
+" set mouse=a						" Automatically enable mouse usage
 scriptencoding utf-8			" Assume utf-8
 " set autowrite					" Automatically write a file when leaving a modified buffer
 set shortmess+=filmnrxoOtT      " abbrev. of messages (avoids 'hit enter')
