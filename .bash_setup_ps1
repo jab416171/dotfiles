@@ -106,7 +106,6 @@ Jobs="\j"
 
 
 # Detect whether the current directory is a git repository.
-# Detect whether the current directory is a git repository.
 function is_git_repository {
 [ $(git ls-files . 2>/dev/null | wc -l) -gt 0 ] && git branch > /dev/null 2>&1
 }
@@ -134,7 +133,7 @@ function set_git_branch {
 	remote_pattern="# Your branch is (ahead|behind) .*by ([0-9][0-9]*)"
 
 	# NOTE: This pings the server. If this is slow, change git_remote_status to just git_status
-	query_git_remote_status
+	# query_git_remote_status
 	if [[ ${git_remote_status} =~ ${remote_pattern} ]]; then
 		if [[ ${BASH_REMATCH[1]} == "ahead" ]]; then
 			remote="↑ $Color_Off(${BASH_REMATCH[2]})"
