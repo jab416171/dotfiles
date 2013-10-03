@@ -12,11 +12,11 @@ alias distract='cat /dev/urandom | hexdump -C | grep "be ef"'
 alias lock='xscreensaver-command -lock && exit'
 alias ga='git add'
 alias gb='git branch'
-alias gc='git commit'
+alias gci='git commit'
 alias gco='git checkout'
 alias gd='git diff'
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset | %an | %cn | -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
-alias gs='git status'
+alias gst='git status'
 alias gsh='git show'
 export HISTSIZE=100000000
 #export HISTFILESIZE=100000000

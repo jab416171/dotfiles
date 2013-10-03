@@ -6,6 +6,7 @@ if [ $GREP_STATUS -ne 1 ]; then
 		git stash
 fi
 #notify-send --icon=utilities-terminal-symbolic -t 50 "Pulling"
+git fetch --prune --tags
 git pull --rebase
 #notify-send --icon=utilities-terminal-symbolic -t 50 "Unstashing"
 if [ $GREP_STATUS -ne 1 ]; then
