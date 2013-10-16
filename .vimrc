@@ -401,6 +401,7 @@ call InitializeDirectories()
 
 
 		color darkblue
+		" autocommand FileType java set tags=/home/josephbass/src/attask/.tags
 
 " { Old vimrc settings (for reference)
 " Make auto-complete Ctr+space
