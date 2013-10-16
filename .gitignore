@@ -9,6 +9,7 @@
 !.liquidpromptrc
 !.vimrc
 !.zshrc
+!.tmux.conf
 !README.md
 !mcabberrc
 !ssh_config.txt
