@@ -1,9 +1,11 @@
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
-HISTSIZE=1000000
+HISTSIZE=10000000
 SAVEHIST=1000000
-setopt appendhistory autocd beep extendedglob nomatch notify
+setopt appendhistory autocd beep extendedglob nomatch notify sharehistory hist_expire_dups_first hist_reduce_blanks
 bindkey -e
+bindkey ' ' magic-space
+
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
 zstyle :compinstall filename '/home/joe/.zshrc'
