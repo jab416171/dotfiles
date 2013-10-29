@@ -19,6 +19,7 @@ alias gl="git log --graph --pretty=format:'%Cred%h%Creset | %an | %cn | -%C(yell
 alias gst='git status'
 alias gsh='git show'
 export HISTSIZE=100000000
+bind '" ": magic-space'
 #export HISTFILESIZE=100000000
 #unset HISTSIZE
 unset HISTFILESIZE
