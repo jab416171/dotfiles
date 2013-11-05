@@ -7,7 +7,7 @@
 	editor = vim
 [alias]
 	st = status
-	ci = commit
+	c = commit
 	br = branch
 	co = checkout
 	df = diff
@@ -17,8 +17,10 @@
 	ignore = update-index --assume-unchanged
 	unignore = update-index --no-assume-unchanged
 	ignored = !git ls-files -v | grep ^[a-z]
+ 	resetorigin = !git checkout master && git branch | grep -v master | xargs git branch -D && git fetch origin && git reset --hard origin/master && git clean -f -d
 [merge]
 	conflictstyle = diff3
+	ff = no
 [color]
 	diff = auto
 	status = auto

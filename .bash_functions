@@ -69,7 +69,13 @@ cp_p() {
 }
 
 extract() {
-		if [ -f $1 ]; then
+		if [ $# == 2 ]; then
+				case $1 in
+						*.zip)			unzip -l $1 ;;
+						*.tar.gz)		tar --list $1 ;;
+						*)					echo "Operation not suppoted yet" ;;
+				esac
+		elif [ -f $1 ]; then
 				case $1 in 
 						*.tar.bz2)  tar xvjf $1 ;;
 						*.tar.gz)   tar xvzf $1 ;;

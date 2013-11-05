@@ -1,6 +1,6 @@
 #!/bin/bash
 #notify-send --icon=utilities-terminal-symbolic -t 50 "Stashing"
-git status --porcelain | grep -E "^?M" > /dev/null
+git status --porcelain | grep -E "^ M" > /dev/null
 GREP_STATUS=$?
 if [ $GREP_STATUS -ne 1 ]; then
 		git stash
