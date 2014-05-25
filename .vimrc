@@ -66,6 +66,8 @@
 			Bundle 'myusuf3/numbers.vim' 
 			" Visually displays indent levels
 			Bundle 'nathanaelkane/vim-indent-guides'
+			" Salt sls syntax highlighting
+			Bundle 'saltstack/salt-vim'
 		" }
 		" General Programming {
 			" Pick one of the checksyntax, jslint, or syntastic
@@ -183,6 +185,8 @@
 			" AutoCloseTag {
 				" Let's close xml tags too
 				au FileType xhtml,xml ru ftplugin/html/autoclosetag.vim
+
+				au BufNewFile,BufRead *.gradle setf groovy
 				nmap <Leader>ac <Plug>ToggleAutoCloseMappings
 			" }
 			" NerdTree {
