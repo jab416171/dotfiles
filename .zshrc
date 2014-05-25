@@ -2,7 +2,7 @@
 HISTFILE=~/.histfile
 HISTSIZE=10000000
 SAVEHIST=1000000
-setopt appendhistory autocd beep extendedglob nomatch notify sharehistory hist_expire_dups_first hist_reduce_blanks prompt_subst 
+setopt appendhistory autocd beep extendedglob nomatch notify sharehistory hist_expire_dups_first hist_reduce_blanks prompt_subst menu_complete
 bindkey -e
 bindkey ' ' magic-space
 
@@ -15,6 +15,7 @@ compinit
 # End of lines added by compinstall
 zmodload zsh/complist
 zstyle ':completion:*:default' list-prompt '%S%M matches%s'
+zstyle ':completion:*:default' menu 'select=0'
 
 bindkey -M listscroll q send-break
 
@@ -52,3 +53,5 @@ TRAPALRM() {
 }
 TMOUT=30
 export PS1='%(?..%?)[%B%*%b] %n:%5~ %# '
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
