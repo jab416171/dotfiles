@@ -19,13 +19,19 @@ alias gl="git log --graph --pretty=format:'%Cred%h%Creset | %an | %cn | -%C(yell
 alias gst='git status'
 alias gsh='git show'
 alias rm='rm -v'
+alias ll='ls -ahlrt'
+export environments='cl01-rls-ut cl01-rls-va cl01-stg cl02-rls-ut cl02-rls-va cl02-stg cl03-rls-ut cl03-rls-va cl03-stg crsb01-rls-ut crsb02-rls-ut hub-rls-va hub-stg load-stg mig-rls-ut sb01-rls-ut sb02-rls-ut sb03-rls-ut td-rls-va td-stg'
 export HISTSIZE=100000000
 bind '" ": magic-space'
+#export JAVA_HOME=/usr/java/jdk1.7.0_60_x86
+export JAVA_HOME=/usr/java/latest
+
 #export HISTFILESIZE=100000000
 #unset HISTSIZE
 unset HISTFILESIZE
 export HISTTIMEFORMAT="%F %T "
-ANDROID_HOME=~/opt/android-sdk-linux
+
+ANDROID_HOME=~/opt/android-studio/sdk
 PATH=${JAVA_HOME}/bin:${PATH}
 PATH=~/bin:${PATH}
 if [[ -d "${ANDROID_HOME}" ]] ; then

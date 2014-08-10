@@ -705,8 +705,8 @@ Disabling GUI mode."
         bitsize=`get_bitsize "$_ncpath/libncui.so"`
 
         # Set the JDK_HOME value as needed
-        cJAVA=$JAVA
-        cJDK_HOME=$JDK_HOME
+        cJAVA=/usr/java/jdk1.7.0_60_x86/bin/java
+        cJDK_HOME=/usr/java/jdk1.7.0_60_x86/
         setup_java "$bitsize"
 
         [ -n "$JAVA" ] && [ "$cJAVA" != "$JAVA" ] \
