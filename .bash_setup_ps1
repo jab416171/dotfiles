@@ -104,6 +104,8 @@ PathFull="\W"
 NewLine="\n"
 Jobs="\j"
 
+source /usr/share/git-core/contrib/completion/git-prompt.sh
+
 
 # Detect whether the current directory is a git repository.
 function is_git_repository {
