@@ -20,11 +20,18 @@ alias gst='git status'
 alias gsh='git show'
 alias rm='rm -v'
 alias ll='ls -ahlrt'
-export environments='cl01-rls-ut cl01-rls-va cl01-stg cl02-rls-ut cl02-rls-va cl02-stg cl03-rls-ut cl03-rls-va cl03-stg crsb01-rls-ut crsb02-rls-ut hub-rls-va hub-stg load-stg mig-rls-ut sb01-rls-ut sb02-rls-ut sb03-rls-ut td-rls-va td-stg'
+export environments='cl01-rls-ca cl01-rls-ut cl01-rls-va cl01-stg cl02-rls-ca cl02-rls-ut cl02-rls-va cl02-stg cl03-rls-ca cl03-rls-ut cl03-rls-va cl03-stg crsb01-rls-ca crsb01-rls-ut crsb02-rls-ca crsb02-rls-ut finance-rls-ut finance-rls-va hub-rls-ca hub-rls-ut hub-rls-va hub-stg load-stg mig-rls-ut pvcl01-rls-ca pvcl02-rls-ca pvcl03-rls-ca sb01-rls-ut sb02-rls-ut sb03-rls-ut scale-stg td-rls-ca td-rls-ut td-rls-va td-stg'
+export environment_domains='.cl01.ca.us.workfront.com .cl01.ut.us.attask.com .cl01.va.us.attask.com -cl01.stg.ut.us.attask.com .cl02.ca.us.workfront.com .cl02.ut.us.attask.com .cl02.va.us.attask.com -cl02.stg.ut.us.attask.com .cl03.ca.us.workfront.com .cl03.ut.us.attask.com .cl03.va.us.attask.com -cl03.stg.ut.us.attask.com .crsb01.ca.us.workfront.com .crsb01.ut.us.attask.com .crsb02.ca.us.workfront.com .crsb02.ut.us.attask.com .prod.ut.us.attask.com .prod.va.us.attask.com .hub.ca.us.workfront.com .dot8.ut.us.attask.com .dot8.va.us.attask.com -dot8.stg.ut.us.attask.com -load.stg.ut.us.attask.com .mig.ut.us.attask.com .pvcl01.ca.us.workfront.com .pvcl02.ca.us.workfront.com .pvcl03.ca.us.workfront.com .sb01.ut.us.attask.com .sb02.ut.us.attask.com .sb03.ut.us.attask.com .scale.ut.us.attask.com .td.ca.us.workfront.com .td.ut.us.attask.com .td.va.us.attask.com -td.stg.ut.us.attask.com'
+
+export hubca='hub.ca.us.workfront.com'
 export HISTSIZE=100000000
 bind '" ": magic-space'
 #export JAVA_HOME=/usr/java/jdk1.7.0_60_x86
-export JAVA_HOME=/usr/java/latest
+#export JAVA_HOME=/usr/java/latest
+export JAVA_HOME=/usr/java/jdk1.8.0_65
+export M2_HOME=/opt/maven
+export M2=$M2_HOME/bin 
+PATH=$M2:$PATH
 
 #export HISTFILESIZE=100000000
 #unset HISTSIZE
