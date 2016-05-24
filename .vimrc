@@ -302,9 +302,11 @@ set whichwrap=b,s,h,l,<,>,[,]	" backspace and cursor keys wrap to
 " set scrolljump=5				" lines to scroll when cursor leaves screen
 set scrolloff=5					" minimum lines to keep above and below cursor
 set foldenable					" auto fold code
-" set list							" Shows nonprintable characters
+set list							" Shows nonprintable characters
 " set listchars=tab:,.,trail:.,extends:#,nbsp:. " Highlight problematic whitespace (include tabs)
-set listchars=trail:.,extends:#,nbsp:. " Highlight problematic whitespace
+" set listchars=trail:.,extends:#,nbsp:. " Highlight problematic whitespace
+set listchars=precedes:¨,tab:»·,trail:·,eol:¬,extends:¨,nbsp:.
+
 " }
 " Formatting {
 set nowrap						" wrap long lines
