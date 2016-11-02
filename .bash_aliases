@@ -28,8 +28,8 @@ export hubca='hub.ca.us.workfront.com'
 export HISTSIZE=100000000
 bind '" ": magic-space'
 #export JAVA_HOME=/usr/java/jdk1.7.0_60_x86
-export JAVA_HOME=/usr/java/latest
-#export JAVA_HOME=/usr/java/jdk1.8.0_65
+#export JAVA_HOME=/usr/java/latest
+export JAVA_HOME=/usr/java/jdk1.8.0_65
 export M2_HOME=/opt/maven
 export M2=$M2_HOME/bin 
 PATH=$M2:$PATH
@@ -63,6 +63,6 @@ fi
 function saltDied {
 SSH="ssh -tt -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o CheckHostIP=no"
 for host in $@; do
-		$SSH $host /usr/bin/sudo /etc/init.d/salt-minion restart
+		ping -c1 -W 3 $host 2>&1 > /dev/null && $SSH $host /usr/bin/sudo salt-call --local service.restart salt-minion
 done
 }
