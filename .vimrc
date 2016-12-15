@@ -190,7 +190,7 @@
 				nmap <Leader>ac <Plug>ToggleAutoCloseMappings
 			" }
 			" NerdTree {
-				map <C-e> :NERDTreeToggle<CR>:NERDTreeMirror<CR>
+"				map <C-e> :NERDTreeToggle<CR>:NERDTreeMirror<CR>
 				map <leader>e :NERDTreeFind<CR>
 				nmap <leader>nt :NERDTreeFind<CR>
 
@@ -368,6 +368,10 @@ map <leader>ev :sp %%
 map <leader>eh :vsp %%
 " Expands to 'edit file in pwd in a new tab'
 map <leader>et :tabe %%
+nnoremap zJ z-
+nnoremap zK z<CR>
+nnoremap zj <C-E>
+nnoremap zk <C-Y>
 
 " Adjust viewports to the same size
 map <Leader>= <C-w>=
