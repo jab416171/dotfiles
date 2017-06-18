@@ -32,6 +32,8 @@ bind '" ": magic-space'
 export JAVA_HOME=/usr/java/jdk1.8.0_65
 export M2_HOME=/opt/maven
 export M2=$M2_HOME/bin 
+export GOROOT=/usr/local/go
+PATH=$GOROOT/bin:$PATH
 PATH=$M2:$PATH
 
 #export HISTFILESIZE=100000000
@@ -64,5 +66,12 @@ function saltDied {
 SSH="ssh -tt -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o CheckHostIP=no"
 for host in $@; do
 		ping -c1 -W 3 $host 2>&1 > /dev/null && $SSH $host /usr/bin/sudo salt-call --local service.restart salt-minion
+done
+}
+function checkKernel {
+SSH="ssh -tt -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o CheckHostIP=no"
+for host in $@; do
+		echo $host
+		ping -c1 -W 3 $host 2>&1 > /dev/null && $SSH $host uname -r
 done
 }

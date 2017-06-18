@@ -254,6 +254,11 @@ set nospell						" spell checking off
 set hidden						" allow buffer switching without saving
 set nrformats=hex			" don't try to increment octal numbers with ctrl+A
 au BufNewFile,BufRead *.yml/* set filetype=yaml
+if &term =~ '256color'
+		" Disable Background Color Erase (BCE) so that color schemes
+		" work properly when Vim is used inside tmux and GNU screen.
+		set t_ut=
+endif
 
 " Setting up directories {
 set backup
