@@ -1,5 +1,5 @@
 [user]
-	name = Joseph Bass
+	name = jab416171
 	email = jab416171@gmail.com
 [core]
 	excludesfile = ~/.gitignore_global
@@ -22,7 +22,7 @@
 	updatefork = !git fetch upstream && git merge --ff-only upstream/master master
 [merge]
 	conflictstyle = diff3
-	ff = no
+	ff = yes
 [color]
 	diff = auto
 	status = auto
@@ -31,5 +31,3 @@
 	default = current
 [github]
 	user = jab416171
-[hooks]
-	mailinglist = josephbass@attask.com
